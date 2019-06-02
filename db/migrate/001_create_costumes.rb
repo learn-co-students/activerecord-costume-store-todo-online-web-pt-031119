@@ -1,3 +1,24 @@
+class CreateCostumes < ActiveRecord::Migration[5.1]
+  def change
+    create_table :costumes do |t|
+       t.string :name
+       t.float :price
+       t.timestamps null: false
+       t.string :image_url
+       t.string :size
+    end
+  end
+end 
+
+
+
+
+
+
+
+
+
+
 # Create a class and inherit from ActiveRecord::Migration
 
 # By convention, the class name should match the part of the
